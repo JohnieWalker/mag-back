@@ -22,7 +22,7 @@ public class AuthEndpoint {
     private PermissionManagementService permissionManagementService;
 
     @PostMapping(value = "/login", consumes = APPLICATION_FORM_URLENCODED_VALUE)
-    public AuthResult authenticate(@RequestParam String username, @RequestParam String password) {
+    public AuthResult logIn(@RequestParam String username, @RequestParam String password) {
         return authenticationService.authenticate(username, password);
     }
 
