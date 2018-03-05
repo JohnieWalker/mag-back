@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+   <Set name="contextPath">/</Set>
+    <Set name="maxFormContentSize" type="int">2000000000</Set>
+</Configure>
